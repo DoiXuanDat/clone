@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SubtitleEditor from './SubtitleEditor';
+import SubtitleEditor from '../../components/subtitle/SubtitleEditor';
 import './ImportText.css';
 
 const ImportText = () => {

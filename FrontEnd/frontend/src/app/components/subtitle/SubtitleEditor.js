@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import FilePicker from "./FilePicker";
+import FilePicker from "../common/filePicker/FilePicker";
 import SubtitleList from "./SubtitleList";
-import Settings from "./Settings";
+import Settings from "../common/settings/Settings"
 import "./SubtitleEditor.css";
 
 const SubtitleEditor = ({ subtitleText }) => {
   const [subtitles, setSubtitles] = useState([]);
   const [imageList, setImageList] = useState([
-    require("../img/30.png"),
-    require("../img/31.png"),
-    require("../img/32.png"),
-    require("../img/33.png"),
+    require("../../assets/images/30.png"),
+    require("../../assets/images/31.png"),
+    require("../../assets/images/32.png"),
+    require("../../assets/images/33.png"),
   ]);
   const [selectedId, setSelectedId] = useState(null);
   const [isPickerOpen, setPickerOpen] = useState(false);
